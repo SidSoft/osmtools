@@ -1,0 +1,89 @@
+body {
+    height: 100%;
+    padding-top: 54px;
+    background-image: url("../images/bg01.jpg");
+  }
+  
+  @media (min-width: 992px) {
+    body {
+    padding-top: 56px;
+    }
+  }
+
+.fill { 
+  min-height: 100vh;
+  background-color: #eee;
+}
+
+.resItem {
+  position: relative;
+}
+
+.resItem p {
+  margin-bottom: .1rem;
+}
+
+.coordinates {
+  border: 2px solid #868b8b;
+  border-radius:10px;
+  background-color: #fff;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  position: absolute;
+  padding: 0 5px;
+  top: 10px;
+  right: 10px;
+}
+
+.locType{
+  color: #ccc;
+  margin-top: -15px;
+  margin-bottom: -15px;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+.top10 {
+  margin-top: 10px;
+}
+
+.nodeBlock {
+  position: relative;
+}
+
+.nodeType {
+  color: #ccc;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.nodeBlock a {
+  color: #482877 !important;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.nodeBlock p {
+  margin-bottom: .1rem;
+}
+
+.invisible {
+  display: none;
+}
+
+.nodeTags {
+  border: 2px solid #868b8b;
+  border-radius:10px;
+  background-color: #fff;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  padding: 5px;
+}
+
+.nodeTags p {
+  word-wrap: break-word;
+}

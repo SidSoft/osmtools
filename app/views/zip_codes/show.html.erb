@@ -1,0 +1,39 @@
+<h1><%= params[:location] %></h1>
+<%= form_tag('show', method: :get) do %>
+  <%= label_tag(:location, 'Location:') %>
+  <%= text_field_tag(:location) %>
+  <%= submit_tag('Search ZIPs') %>
+<% end %>
+<br><br>
+<div class="container">
+	<div class="table">
+		<div class="table-header">
+			<div class="header__item"><a id="admin_code_1" class="filter__link" href="#">admin_code_1</a></div>
+			<div class="header__item"><a id="admin_code_2" class="filter__link filter__link--number" href="#">admin_code_2</a></div>
+			<div class="header__item"><a id="admin_name_1" class="filter__link filter__link--number" href="#">admin_name_1</a></div>
+			<div class="header__item"><a id="admin_name_2" class="filter__link filter__link--number" href="#">admin_name_2</a></div>
+			<div class="header__item"><a id="country_code" class="filter__link filter__link--number" href="#">country_code</a></div>
+			<div class="header__item"><a id="distance" class="filter__link filter__link--number" href="#">distance</a></div>
+			<div class="header__item"><a id="longitude" class="filter__link filter__link--number" href="#">longitude</a></div>
+			<div class="header__item"><a id="latitude" class="filter__link filter__link--number" href="#">latitude</a></div>
+			<div class="header__item"><a id="place_name" class="filter__link filter__link--number" href="#">place_name</a></div>
+			<div class="header__item"><a id="postal_code" class="filter__link filter__link--number" href="#">postal_code</a></div>
+		</div>
+		<div class="table-content">
+      <% @postal_codes.each do |code| %>
+        <div class="table-row">
+          <div class="table-data"><%= code.admin_code_1 %></div>
+          <div class="table-data"><%= code.admin_code_2 %></div>
+          <div class="table-data"><%= code.admin_name_1 %></div>
+          <div class="table-data"><%= code.admin_name_2 %></div>
+          <div class="table-data"><%= code.country_code %></div>
+          <div class="table-data"><%= code.distance %></div>
+          <div class="table-data"><%= code.longitude %></div>
+          <div class="table-data"><%= code.latitude %></div>
+          <div class="table-data"><%= code.place_name %></div>
+          <div class="table-data"><%= code.postal_code %></div>
+        </div>
+      <% end %>
+  </div>
+</div>      	
+	
